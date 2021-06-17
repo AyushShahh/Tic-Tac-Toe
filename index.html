@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Play classic Tic Tac Toe game made by me">
+        <meta name="author" content="Ayush Shah">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Tic-Tac-Toe</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+    </head>
+
+    <body>
+        <div class="theme">
+            <div class="container">
+        
+                <div class="btn-div">		
+                    <label class="switch">
+                        <input type="checkbox" class="t-btn">
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="label-text">Theme</div>
+                </div>
+
+                <h1>Tic-Tac-Toe</h1>
+                <div class="play-area">
+                    <div id="block_0" class="block"></div>
+                    <div id="block_1" class="block"></div>
+                    <div id="block_2" class="block"></div>
+                    <div id="block_3" class="block"></div>
+                    <div id="block_4" class="block"></div>
+                    <div id="block_5" class="block"></div>
+                    <div id="block_6" class="block"></div>
+                    <div id="block_7" class="block"></div>
+                    <div id="block_8" class="block"></div>
+                </div>
+                
+                <h2 id="winner" style="display:show;">Good luck ;)</h2>
+                <button onclick="reset_board()">Reset</button>
+                <br><br>
+                <p><b>Made by Ayush Shah :)</b></p><br>
+
+                <a href='http://www.freevisitorcounters.com' style="color:#eee">Freevisitorcounters.com</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=1df682d7ae065ebdda5be9c8922f0bb53cc0db63'></script>
+                <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/808980/t/9"></script>
+
+                <script type="text/javascript" src="https://freehitcounters.org/count/8dbv"></script><br>
+                <a href='http://www.freevisitorcounters.com' style="color:#eee">Freevisitorcounters.com</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=3c3370f345f3b19fc0f9101120c3bfac2009e1aa'></script>
+
+            </div>
+        </div>
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+		$(".t-btn").click(function(){
+  			$(".theme").toggleClass("dark");
+		});
+	</script>
+        <script src="game.js"></script>
+    </body>
+</html>

@@ -218,10 +218,6 @@ button:hover {
   background-color: black;
 }
 
-a {
-display:none;
-}
-
 .label-text {
   position: relative;
   display: block;

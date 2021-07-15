@@ -1,57 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
+        <!--Common tags-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Play classic Tic Tac Toe game made by me">
+        <meta name="description" content="Play classic Tic-Tac-Toe game">
+        <meta name="image" content="https://tictactoeegame.netlify.app/Assets/favicons/android-chrome-512x512.png">
         <meta name="author" content="Ayush Shah">
-        <link rel="stylesheet" href="style.css">
+        <meta name="theme-color" content="#000">
+
+        <!--Open graph tags-->
+        <meta name="og:title" content="Tic-Tac-Toe">
+        <meta name="og:description" content="Play classic Tic-Tac-Toe game">
+        <meta name="og:image" content="https://tictactoeegame.netlify.app/Assets/favicons/android-chrome-512x512.png">
+        <meta name="og:url" content="https://tictactoeegame.netlify.app/">
+        <meta name="og:site_name" content="Tic-Tac-Toe">
+        <meta name="og:type" content="website">
+
+        <!-- Schema.org for Google -->
+        <meta itemprop="name" content="Tic-Tac-Toe">
+        <meta itemprop="description" content="Play classic Tic-Tac-Toe game">
+        <meta itemprop="image" content="https://tictactoeegame.netlify.app/Assets/favicons/android-chrome-512x512.png">">
+
+        <!--Twitter-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Tic-Tac-Toe">
+        <meta name="twitter:url" content="https://tictactoeegame.netlify.app/">
+        <meta name="twitter:description" content="Play classic Tic-Tac-Toe game">
+        <meta name="twitter:image" content="https://tictactoeegame.netlify.app/Assets/favicons/android-chrome-512x512.png">
+        <meta name="twitter:creator" content="@ayushshah__">
 
         <title>Tic-Tac-Toe</title>
 
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/Assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicons/favicon-16x16.png">
     </head>
 
     <body>
-        <div class="theme">
-            <div class="container">
-        
-                <div class="btn-div">		
-                    <label class="switch">
-                        <input type="checkbox" class="t-btn">
-                        <span class="slider round"></span>
-                    </label>
-                    <div class="label-text">Theme</div>
-                </div>
-
-                <h1>Tic-Tac-Toe</h1>
-                <div class="play-area">
-                    <div id="block_0" class="block"></div>
-                    <div id="block_1" class="block"></div>
-                    <div id="block_2" class="block"></div>
-                    <div id="block_3" class="block"></div>
-                    <div id="block_4" class="block"></div>
-                    <div id="block_5" class="block"></div>
-                    <div id="block_6" class="block"></div>
-                    <div id="block_7" class="block"></div>
-                    <div id="block_8" class="block"></div>
-                </div>
+        <div class="container">
                 
-                <h2 id="winner" style="display:show;">Good luck ;)</h2>
-                <button onclick="reset_board()">Reset</button>
-                <br><br>
-                <p><b>Made by Ayush Shah :)</b></p><br>
+            <h1>Tic-Tac-Toe</h1>
 
+            <div class="play-area">
+                <div id="block_0" class="block"></div>
+                <div id="block_1" class="block"></div>
+                <div id="block_2" class="block"></div>
+                <div id="block_3" class="block"></div>
+                <div id="block_4" class="block"></div>
+                <div id="block_5" class="block"></div>
+                <div id="block_6" class="block"></div>
+                <div id="block_7" class="block"></div>
+                <div id="block_8" class="block"></div> 
             </div>
+
+            <h2 id="winner" style="display:show;">Good luck ;)</h2>
+            <button onclick="reset_board()">Reset</button>
+            <br><br>
+
+            <p><b>Made by Ayush Shah :)</b></p> <br>
         </div>
-	
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script>
-		$(".t-btn").click(function(){
-  			$(".theme").toggleClass("dark");
-		});
-	</script>
-        <script src="game.js"></script>
+	    <script src="/scripts/game.js"></script>
     </body>
 </html>

@@ -1,4 +1,4 @@
-# Tic-Tac-Toe ![logo](assets/favicons/favicon-16x16.png)
+# Tic-Tac-Toe ![logo](assets/favicons/favicon-32x32.png)
 
 > A classic game built using **HTML**, **CSS** & **JavaScript**.
 

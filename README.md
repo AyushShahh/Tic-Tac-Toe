@@ -105,4 +105,6 @@ I don't like spams
 &nbsp; <a href="https://www.instagram.com/ayushshah__/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50"/></a>
 &nbsp; <a href="https://www.quora.com/profile/Ayush-Shah-133/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/clouds/50/000000/quora.png"/></a>
 &nbsp; <a href="https://www.clubhouse.com/@ayushshah_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluent/45/000000/so-so.png"/></a>
-&nbsp; <a href="https://www.discordapp.com/users/810944110046740491" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/doodle/46/000000/discord-new-logo.png"/></a>
+&nbsp; <a href="https://www.discordapp.com/users/810944110046740491" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/doodle/46/000000/discord-new-logo.png"/></a><br><br>
+
+**[Back to top](#tic-tac-toe)**

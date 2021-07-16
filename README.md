@@ -73,7 +73,8 @@ The processes will be same with other browsers too.
     - [ ] Linethrough on the respective column, row or diagonal when a player wins
  - [ ] Adding **AI** using JavaScript **minimax algorithm**
     - [ ] Adding **different levels** that user can select to play against computer. e.g. Easy, hard, unbeatable.<br>
->Know how to impliment these features and contribute? Check [Contributions](#contributing) section.
+>Know how to impliment these features and contribute? Check [Contributions](#contributing) section.<br>
+**Have more ideas?** Check [this](#have-an-idea-or-questions)
 
 ## External Libraries used
 [PWACompat](https://github.com/GoogleChromeLabs/pwacompat) - PWACompat is a library that brings the Web App Manifest to non-compliant browsers for better Progressive Web Apps. This mostly means creating splash screens and icons for Mobile Safari, as well as supporting IE/Edge's Pinned Sites feature.
@@ -93,7 +94,7 @@ If you find a bug, you can always **open an issue** in the [issues tab](https://
 
 
 ## Contributing
-Pull requests are always welcome. But before making any major changes you can open an [issue](https://github.com/AyushShahh/Tic-Tac-Toe/issue) to discuss.<br>
+Pull requests are always welcome. But before making any major changes you can open an [issue](https://github.com/AyushShahh/Tic-Tac-Toe/issues) to discuss.<br>
 For less major or minor changes, you can open a [pull request](https://github.com/AyushShahh/Tic-Tac-Toe/pulls).<br>
 You can also [contact](#contact) me.<br>
 **Thanks for contributing.**

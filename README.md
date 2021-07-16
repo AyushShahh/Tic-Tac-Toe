@@ -26,7 +26,7 @@ Tic-tac-toe is a game for two players, :x: and :o:, who take turns marking the s
 _ _ _
 In **<u>this game</u>**, you will be playing as :x: & computer will be playing as :o:
 
-### Playing
+### <u><b>Playing</b></u>
 - :x: plays first.
 - Click on any grid box to play your move.
 - Click reset button after completion to reset the board and play again.

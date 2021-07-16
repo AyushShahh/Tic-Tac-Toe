@@ -107,4 +107,4 @@ I don't like spams
 &nbsp; <a href="https://www.clubhouse.com/@ayushshah_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluent/45/000000/so-so.png"/></a>
 &nbsp; <a href="https://www.discordapp.com/users/810944110046740491" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/doodle/46/000000/discord-new-logo.png"/></a><br><br>
 
-**[Back to top](#tic-tac-toe)**
+**[Back to top](#tic-tac-toe-logo)**

@@ -8,7 +8,7 @@
 <br>
 
 A classic game built using **HTML**, **CSS** & **JavaScript**.<br>
-View the live demo **[here](https://tictactoeegame.netlify.app)**.
+Check the live site **[here](https://tictactoeegame.netlify.app)**.
 
 ## Table of Contents
 - [Game walkthrough](#game-walkthrough)
@@ -31,9 +31,9 @@ Example of the game made:<br>
 Tic-tac-toe is a game for two players, :x: and :o:, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner.
 
 _ _ _
-In **<u>this game</u>**, you will be playing as :x: & computer will be playing as :o:.
+In **this game**, you will be playing as :x: & computer will be playing as :o:.
 
-### <b><u>Playing</u></b>
+### <b>Playing</b>
 - :x: plays first.
 - Click on any grid box to play your move.
 - Click reset button after completion to reset the board and play again.
@@ -43,7 +43,7 @@ In **<u>this game</u>**, you will be playing as :x: & computer will be playing a
  It is just a JS code that plays randomly, regardless of your move.
 
  ## Web App
- While you can go to the [website](https://tictactoeegame.netlify.app) to play, I would suggest you to use the **<u>web app</u>** so that you don't have to go to the browser and type in the website everytime to want to play. You can directly open the **web application** on your **home screen** or the **desktop shortcut** on your computer to play.<br>
+ While you can go to the [website](https://tictactoeegame.netlify.app) to play, I would suggest you to use the **web app** so that you don't have to go to the browser and type in the website everytime to want to play. You can directly open the **web application** on your **home screen** or the **desktop shortcut** on your computer to play.<br>
 
  **Follow the steps:**
 1. For desktop users
@@ -101,8 +101,10 @@ If you find a bug, you can always **open an issue** in the [issues tab](https://
 >Know a fix or want to contribute? Check [contributions](#contributing) section.
 
 ## Contributing
-Pull requests are always welcome. But before making any major changes you can open an [issue](https://github.com/AyushShahh/Tic-Tac-Toe/issues) to discuss.<br>
-For less major or minor changes, you can open a [pull request](https://github.com/AyushShahh/Tic-Tac-Toe/pulls).<br>
+Pull requests are always welcome. But before making any major changes you can open an [issue](https://github.com/AyushShahh/Tic-Tac-Toe/issues) to discuss.
+
+For less major or minor changes, you can open a [pull request](https://github.com/AyushShahh/Tic-Tac-Toe/pulls).
+
 You can also [contact](#contact) me.<br>
 **Thanks for contributing.**
 

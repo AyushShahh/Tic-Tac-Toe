@@ -7,9 +7,10 @@
 - [Game walkthrough](#game-walkthrough)
 - [Brief](#brief)
 - [Playing](#playing)
+- [To-Do List](#to-do-list)
 
 ## Game Walkthrough
-Live example of the game made:<br>
+Example of the game made:<br>
 
 <img src="assets/demos/walkthrough.gif" width="75%">
 
@@ -20,8 +21,23 @@ _ _ _
 In **<u>this game</u>**, you will be playing as :x: & computer will be playing as :o:
 
 ### Playing
+- :x: plays first.
 - Click on any grid box to play your move.
 - Click reset button after completion to reset the board and play again.
+
+**Note:** <br>
+ Currently, there is no (real) computer playing against you.<br>
+ It is just a JS code that plays randomly, regardless of your move.<br>
+
+ ## To-Do List
+ This contains the list of features I'm working on or wish to impliment them in future
+ - [] Adding **AI** using JavaScript **minimax algorithm**
+    - [] Addeing **different levels** that user can select.<br>
+    e.g. Easy, hard, unbeatable
+    
+
+
+
 
 
 

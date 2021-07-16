@@ -31,8 +31,8 @@ In **<u>this game</u>**, you will be playing as :x: & computer will be playing a
 
  ## To-Do List
  This contains the list of features I'm working on or wish to impliment them in future
- -[] Adding **AI** using JavaScript **minimax algorithm**
-    -[] Addeing **different levels** that user can select.<br>
+ - [ ] Adding **AI** using JavaScript **minimax algorithm**
+    - [ ] Addeing **different levels** that user can select.<br>
     e.g. Easy, hard, unbeatable
 
 

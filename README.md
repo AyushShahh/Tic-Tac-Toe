@@ -9,6 +9,11 @@
 - [Playing](#playing)
 - [Web App](#web-app)
 - [To-Do List](#to-do-list)
+- [External Libraries used](#external-libraries-used)
+- [Have an idea? or questions?](#have-an-idea-or-questions)
+- [Found a bug?](#found-a-bug)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
 ## Game Walkthrough
 Example of the game made:<br>
@@ -30,7 +35,7 @@ In **<u>this game</u>**, you will be playing as :x: & computer will be playing a
  Currently, there is no (real) computer playing against you.<br>
  It is just a JS code that plays randomly, regardless of your move.<br>
 
- ### Web App
+ ## Web App
  While you can go to the [website](https://tictactoeegame.netlify.app) to play, I would suggest you to use the **<u>web app</u>** so that you don't have to go to the browser and type in the website everytime to want to play. You can directly open the **web application** on your **home screen** or the **desktop shortcut** on your computer to play.<br>
 
  **Follow the steps:**
@@ -40,7 +45,7 @@ In **<u>this game</u>**, you will be playing as :x: & computer will be playing a
         - Tap the **three dots &#8942;** on the top right corner
         - Click on **More tools**
         - Click on **Create shortcut**
-        - Check - [x] Open as window and click create
+        - Check Open as window option and click create
 - For mobile users
     - Chrome
         - Navigate to the [website](https://tictactoeegame.netlify.app)
@@ -67,13 +72,37 @@ The processes will be same with other browsers too.
     - [ ] :x: and :o: animate while making a move
     - [ ] Linethrough on the respective column, row or diagonal when a player wins
  - [ ] Adding **AI** using JavaScript **minimax algorithm**
-    - [ ] Adding **different levels** that user can select to play against computer. e.g. Easy, hard, unbeatable.
+    - [ ] Adding **different levels** that user can select to play against computer. e.g. Easy, hard, unbeatable.<br>
+>Know how to impliment these features and contribute? Check [Contributions](#contributing) section.
+
+## External Libraries used
+[PWACompat](https://github.com/GoogleChromeLabs/pwacompat) - PWACompat is a library that brings the Web App Manifest to non-compliant browsers for better Progressive Web Apps. This mostly means creating splash screens and icons for Mobile Safari, as well as supporting IE/Edge's Pinned Sites feature.
+
+## Have an idea? or questions?
+If you have an amazing idea about this, or you got some questions, you can discuss them in the [discussions](https://github.com/AyushShahh/Tic-Tac-Toe/discussions) tab.<br>
+
+---
+If you want to impliment your idea by contributing, check [contributing](#contributing) section.
+
+## Found a bug?
+If you find a bug, you can always **open an issue** in the [issues tab](https://github.com/AyushShahh/Tic-Tac-Toe/issues) or you can **contact me** [below](#contact).<br>
+
+---
+**Note:** Make sure you browse through the existing issues to check if the issue already exists.<br>
+>Know a fix or want to contribute? Check [contributions](#contributing) section.
 
 
+## Contributing
+Pull requests are always welcome. But before making any major changes you can open an [issue](https://github.com/AyushShahh/Tic-Tac-Toe/issue) to discuss.<br>
+For less major or minor changes, you can open a [pull request](https://github.com/AyushShahh/Tic-Tac-Toe/pulls).<br>
+You can also [contact](#contact) me.<br>
+**Thanks for contributing.**
 
-
-
-
-
-
-
+# Contact
+I don't like spams
+<p>
+<a href="https://twitter.com/ayushshah__" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="50" /></a>  
+&nbsp; <a href="https://www.instagram.com/ayushshah__/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50"/></a>
+&nbsp; <a href="https://www.quora.com/profile/Ayush-Shah-133/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/clouds/50/000000/quora.png"/></a>
+&nbsp; <a href="https://www.clubhouse.com/@ayushshah_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluent/45/000000/so-so.png"/></a>
+&nbsp; <a href="https://www.discordapp.com/users/810944110046740491" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/doodle/46/000000/discord-new-logo.png"/></a>

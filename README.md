@@ -8,9 +8,9 @@
 - [Game walkthrough](#game-walkthrough)
 
 ## Description
-Tic-tac-toe is a game for two players, :x: and :o:, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner.
+>Tic-tac-toe is a game for two players, :x: and :o:, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner.
 
----
+- - -
 In **<u>this game</u>**, you will be playing as :x: & computer will be playing as :o:
 
 ## Game Walkthrough

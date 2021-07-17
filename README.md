@@ -74,7 +74,7 @@ The process will be same with other browsers too.
  - [x] Adding **dark theme** mode
  - [ ] Adding **two player** mode
  - [ ] Giving user the option to either play as :x: or :o:
- - [ ] Showing scores
+ - [x] Showing scores
  - [ ] :x: and :o: **animate** while making a move
  - [ ] **Linethrough** on the respective column, row or diagonal when a player wins
  - [ ] Adding **AI** using JavaScript **minimax algorithm**

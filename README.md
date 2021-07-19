@@ -71,15 +71,15 @@ The process will be same with other browsers too.
 
  ## To-Do List
  This contains the list of features I'm working on or wish to implement them in future.
- - [x] Adding **dark theme** mode
- - [ ] Adding **two player** mode
+ - [x] Adding dark theme mode
+ - [ ] Adding two player mode
  - [ ] Giving user the option to either play as :x: or :o:
  - [x] Showing scores
- - [ ] :x: and :o: **animate** while making a move
- - [ ] **Linethrough** on the respective column, row or diagonal when a player wins
- - [ ] Adding **AI** using JavaScript **minimax algorithm**
- - [ ] Adding **different levels** that user can select to play against computer. e.g. Easy, hard, unbeatable.
- - [ ] Adding **multiplayer** mode
+ - [ ] :x: and :o: animate while making a move
+ - [ ] Linethrough on the respective column, row or diagonal when a player wins
+ - [ ] Adding AI using JavaScript minimax algorithm
+ - [ ] Adding different levels that user can select to play against computer. e.g. Easy, hard, unbeatable.
+ - [ ] Adding multiplayer mode
 
 >Know how to implement these features and contribute? Check [Contributions](#contributing) section.<br>
 **Have more ideas?** Check [this](#have-an-idea-or-questions)

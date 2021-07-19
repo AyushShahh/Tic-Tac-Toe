@@ -1,12 +1,20 @@
 const player = "X";
 const computer = "O";
 
+player_score = 0;
+game_draws = 0;
+computer_score = 0;
+
 let board_full = false;
 let play_board = ["", "", "", "", "", "", "", "", ""];
 
 const board_container = document.querySelector(".play-area");
 
 const winner_statement = document.getElementById("winner");
+
+html_player_score = document.getElementById("player-score");
+html_game_draws = document.getElementById("game-draws");
+html_computer_score = document.getElementById("computer-score");
 
 check_board_complete = () => {
   let flag = true;
@@ -61,17 +69,23 @@ const check_match = () => {
 const check_for_winner = () => {
   let res = check_match()
   if (res == player) {
+    player_score += 1;
     winner.innerText = "You Won! :)";
     winner.classList.add("playerWin");
     board_full = true
   } else if (res == computer) {
+    computer_score += 1;
     winner.innerText = "Computer Won :(";
     winner.classList.add("computerWin");
     board_full = true
   } else if (board_full) {
+    game_draws += 1;
     winner.innerText = "Draw!";
     winner.classList.add("draw");
   }
+  html_player_score.innerText = player_score;
+  html_game_draws.innerText = game_draws;
+  html_computer_score.innerText = computer_score;
 };
 
 const render_board = () => {

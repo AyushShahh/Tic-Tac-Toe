@@ -71,7 +71,6 @@ The process will be same with other browsers too.
 
  ## To-Do List
  This contains the list of features I'm working on or wish to implement them in future.
- - [x] Adding dark theme mode
  - [ ] Adding two player mode
  - [ ] Giving user the option to either play as :x: or :o:
  - [x] Showing scores

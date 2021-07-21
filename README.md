@@ -66,8 +66,7 @@ In **this game**, you will be playing as :x: & computer will be playing as :o:.
     - Tap **Add to home screen** from the menu
     - Type name for shortcut and then tap **Add** button
 
-Now you can use this game as a **Web App**.<br>
-The process will be same with other browsers too.
+Now you can use this game as a **Web App**.
 
  ## To-Do List
  This contains the list of features I'm working on or wish to implement them in future.

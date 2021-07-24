@@ -1,10 +1,10 @@
 # Tic-Tac-Toe ![logo](assets/favicons/favicon-32x32.png)
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAyushShahh%2FTic-Tac-Toe&count_bg=%23000000&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=views&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAyushShahh%2FTic-Tac-Toe&count_bg=%23000000&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=views&edge_flat=false)](https://hits.seeyoufarm.com)
 [![GitHub stars](https://img.shields.io/github/stars/AyushShahh/Tic-Tac-Toe)](https://github.com/AyushShahh/Tic-Tac-Toe/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/AyushShahh/Tic-Tac-Toe)](https://github.com/AyushShahh/Tic-Tac-Toe/network)
 [![GitHub issues](https://img.shields.io/github/issues/AyushShahh/Tic-Tac-Toe)](https://github.com/AyushShahh/Tic-Tac-Toe/issues)
-[![Twitter](https://img.shields.io/twitter/url?logoColor=black&style=social&url=https%3A%2F%2Fgithub.com%2FAyushShahh%2FTic-Tac-Toe)](https://twitter.com/intent/tweet?text=Wow!%20This%20is%20so%20cool.&url=https%3A%2F%2Fgithub.com%2FAyushShahh%2FTic-Tac-Toe)
+[![Twitter](https://img.shields.io/twitter/url?logoColor=black&style=social&url=https%3A%2F%2Fgithub.com%2FAyushShahh%2FTic-Tac-Toe)](https://twitter.com/intent/tweet?text=Woah!%20This%20is%20cool.&url=https%3A%2F%2Fgithub.com%2FAyushShahh%2FTic-Tac-Toe)
 <br>
 
 A classic game built using **HTML**, **CSS** & **JavaScript**.<br>
@@ -66,7 +66,8 @@ In **this game**, you will be playing as :x: & computer will be playing as :o:.
     - Tap **Add to home screen** from the menu
     - Type name for shortcut and then tap **Add** button
 
-Now you can use this game as a **Web App**.
+Now you can use this game as a **Web App**.<br>
+The process might be similar for other browsers too.
 
  ## To-Do List
  This contains the list of features I'm working on or wish to implement them in future.

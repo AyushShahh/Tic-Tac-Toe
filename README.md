@@ -4,7 +4,9 @@
 [![GitHub stars](https://img.shields.io/github/stars/AyushShahh/Tic-Tac-Toe)](https://github.com/AyushShahh/Tic-Tac-Toe/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/AyushShahh/Tic-Tac-Toe)](https://github.com/AyushShahh/Tic-Tac-Toe/network)
 [![GitHub issues](https://img.shields.io/github/issues/AyushShahh/Tic-Tac-Toe)](https://github.com/AyushShahh/Tic-Tac-Toe/issues)
-[![Twitter](https://img.shields.io/twitter/url?logoColor=black&style=social&url=https%3A%2F%2Fgithub.com%2FAyushShahh%2FTic-Tac-Toe)](https://twitter.com/intent/tweet?text=Woah!%20This%20is%20cool.&url=https%3A%2F%2Fgithub.com%2FAyushShahh%2FTic-Tac-Toe)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AyushShahh/Tic-Tac-Toe?color=yellow)
+![Lines of code](https://img.shields.io/tokei/lines/github/AyushShahh/Tic-Tac-Toe?label=total%20lines%20of%20code)
+[![Twitter](https://img.shields.io/twitter/url?label=Tweet%20this&logoColor=black&style=social&url=https%3A%2F%2Fgithub.com%2FAyushShahh%2FTic-Tac-Toe)](https://twitter.com/intent/tweet?text=Woah!%20This%20is%20cool.&url=https%3A%2F%2Fgithub.com%2FAyushShahh%2FTic-Tac-Toe)
 <br>
 
 A classic game built using **HTML**, **CSS** & **JavaScript**.<br>
@@ -31,12 +33,12 @@ Example of the game made:<br>
 Tic-tac-toe is a game for two players, :x: and :o:, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner.
 
 _ _ _
-In **this game**, you will be playing as :x: & computer will be playing as :o:.
+In **this game**, you will be playing as **X** & computer will be playing as **O**.
 
-### <b>Playing</b>
-- :x: plays first.
-- Click on any grid box to play your move.
-- Click reset button after completion to reset the board and play again.
+### <b>Playing</b>:
+- **X** plays first
+- Click on any grid box to play your move
+- Click reset button after completion to reset the board and play again
 
 **Note:** <br>
  Currently, there is no (real) computer playing against you.<br>
@@ -77,7 +79,7 @@ The process might be similar for other browsers too.
  - [ ] :x: and :o: animate while making a move
  - [ ] Linethrough on the respective column, row or diagonal when a player wins
  - [ ] Adding AI using JavaScript minimax algorithm
- - [ ] Adding different levels that user can select to play against computer. e.g. Easy, hard, unbeatable.
+ - [ ] Adding different levels that user can select to play against computer. e.g. Easy, hard, unbeatable
  - [ ] Adding multiplayer mode
 
 >Know how to implement these features and contribute? Check [Contributions](#contributing) section.<br>

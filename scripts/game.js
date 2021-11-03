@@ -1,135 +1,167 @@
-const player = "X";
-const computer = "O";
+var origBoard;
+const huPlayer = 'X';
+const aiPlayer = 'O';
 
 player_score = 0;
 game_draws = 0;
 computer_score = 0;
 
-let board_full = false;
-let play_board = ["", "", "", "", "", "", "", "", ""];
-
-const board_container = document.querySelector(".play-area");
-
-const winner_statement = document.getElementById("winner");
-
 html_player_score = document.getElementById("player-score");
 html_game_draws = document.getElementById("game-draws");
 html_computer_score = document.getElementById("computer-score");
 
-check_board_complete = () => {
-  let flag = true;
-  play_board.forEach(element => {
-    if (element != player && element != computer) {
-      flag = false;
-    }
-  });
-  board_full = flag;
-};
+const winCombos = [
+	[0, 1, 2],
+	[3, 4, 5],
+	[6, 7, 8],
+	[0, 3, 6],
+	[1, 4, 7],
+	[2, 5, 8],
+	[0, 4, 8],
+	[6, 4, 2]
+]
 
-const check_line = (a, b, c) => {
-  return (
-    play_board[a] == play_board[b] &&
-    play_board[b] == play_board[c] &&
-    (play_board[a] == player || play_board[a] == computer)
-  );
-};
+const cells = document.querySelectorAll('.block');
+const winner_statement = document.getElementById("winner");
+const board_container = document.querySelector(".play-area");
 
-const check_match = () => {
-  for (i = 0; i < 9; i += 3) {
-    if (check_line(i, i + 1, i + 2)) {
-      document.querySelector(`#block_${i}`).classList.add("win");
-      document.querySelector(`#block_${i + 1}`).classList.add("win");
-      document.querySelector(`#block_${i + 2}`).classList.add("win");
-      return play_board[i];
-    }
-  }
-  for (i = 0; i < 3; i++) {
-    if (check_line(i, i + 3, i + 6)) {
-      document.querySelector(`#block_${i}`).classList.add("win");
-      document.querySelector(`#block_${i + 3}`).classList.add("win");
-      document.querySelector(`#block_${i + 6}`).classList.add("win");
-      return play_board[i];
-    }
-  }
-  if (check_line(0, 4, 8)) {
-    document.querySelector("#block_0").classList.add("win");
-    document.querySelector("#block_4").classList.add("win");
-    document.querySelector("#block_8").classList.add("win");
-    return play_board[0];
-  }
-  if (check_line(2, 4, 6)) {
-    document.querySelector("#block_2").classList.add("win");
-    document.querySelector("#block_4").classList.add("win");
-    document.querySelector("#block_6").classList.add("win");
-    return play_board[2];
-  }
-  return "";
-};
+startGame();
 
-const check_for_winner = () => {
-  let res = check_match()
-  if (res == player) {
-    player_score += 1;
-    winner.innerText = "You Won! :)";
-    winner.classList.add("playerWin");
-    board_full = true
-  } else if (res == computer) {
-    computer_score += 1;
-    winner.innerText = "Computer Won :(";
-    winner.classList.add("computerWin");
-    board_full = true
-  } else if (board_full) {
-    game_draws += 1;
-    winner.innerText = "Draw!";
-    winner.classList.add("draw");
-  }
-  html_player_score.innerText = player_score;
-  html_game_draws.innerText = game_draws;
-  html_computer_score.innerText = computer_score;
-};
+function startGame() {
+	winner_statement.classList.remove("playerWin");
+    winner_statement.classList.remove("computerWin");
+    winner_statement.classList.remove("draw");
+    winner_statement.innerText = "Good luck ;)";
 
-const render_board = () => {
-  board_container.innerHTML = ""
-  play_board.forEach((e, i) => {
-    board_container.innerHTML += `<div id="block_${i}" class="block" onclick="addPlayerMove(${i})">${play_board[i]}</div>`
-    if (e == player || e == computer) {
-      document.querySelector(`#block_${i}`).classList.add("occupied");
-    }
-  });
-};
-
-const game_loop = () => {
-  render_board();
-  check_board_complete();
-  check_for_winner();
+	origBoard = Array.from(Array(9).keys());
+	for (var i = 0; i < cells.length; i++) {
+		cells[i].innerText = '';
+		cells[i].classList.remove('win');
+		cells[i].addEventListener('click', turnClick, false);
+	}
 }
 
-const addPlayerMove = e => {
-  if (!board_full && play_board[e] == "") {
-    play_board[e] = player;
-    game_loop();
-    addComputerMove();
-  }
-};
+function turnClick(square) {
+	if (typeof origBoard[square.target.id] == 'number'){
+		turn(square.target.id, huPlayer);
 
-const addComputerMove = () => {
-  if (!board_full) {
-    do {
-      selected = Math.floor(Math.random() * 9);
-    } while (play_board[selected] != "");
-    play_board[selected] = computer;
-    game_loop();
-  }
-};
+		if (!checkWin(origBoard, huPlayer) && !checkTie())
+			turn(bestSpot(), aiPlayer);
+	}
+}
 
-const reset_board = () => {
-  play_board = ["", "", "", "", "", "", "", "", ""];
-  board_full = false;
-  winner.classList.remove("playerWin");
-  winner.classList.remove("computerWin");
-  winner.classList.remove("draw");
-  winner.innerText = "Good luck ;)";
-  render_board();
-};
+function turn(squareId, player) {
+	origBoard[squareId] = player;
+	document.getElementById(squareId).innerText = player;
+	let gameWon = checkWin(origBoard, player);
+	if (gameWon)
+		gameOver(gameWon);
+}
 
-render_board();
+function checkWin(board, player) {
+	let plays = board.reduce((a, e, i) =>
+		(e === player) ? a.concat(i) : a, []);
+	let gameWon = null;
+	for (let [index, win] of winCombos.entries()) {
+		if (win.every(elem => plays.indexOf(elem) > -1)) {
+			gameWon = {index: index, player: player};
+			break;
+		}
+	}
+	return gameWon;
+}
+
+function gameOver(gameWon) {
+	for (let index of winCombos[gameWon.index]) {
+		document.getElementById(index).classList.add("win");
+	}
+	for (var i = 0; i < cells.length; i++) {
+		cells[i].removeEventListener('click', turnClick, false);
+	}
+	if (gameWon.player == huPlayer){
+		player_score += 1;
+    	winner_statement.innerText = "You Won! :)";
+    	winner_statement.classList.add("playerWin");
+		html_player_score.innerText = player_score;
+	}
+	else {
+		computer_score += 1;
+		winner_statement.innerText = "Computer Won :(";
+		winner_statement.classList.add("computerWin");
+		html_computer_score.innerText = computer_score;
+	}
+}
+
+function emptySquares() {
+	return origBoard.filter(s => typeof s == 'number');
+}
+
+function bestSpot() {
+	return minimax(origBoard, aiPlayer).index;
+}
+
+function checkTie() {
+	if (emptySquares().length == 0) {
+		for (var i = 0; i < cells.length; i++) {
+			cells[i].removeEventListener('click', turnClick, false);
+		}
+		game_draws += 1;
+    	winner_statement.innerText = "Draw!";
+    	winner_statement.classList.add("draw");
+		html_game_draws.innerText = game_draws;
+		return true;
+	}
+	return false;
+}
+
+function minimax(newBoard, player) {
+	var availSpots = emptySquares();
+
+	if (checkWin(newBoard, huPlayer)) {
+		return {score: -10};
+	} else if (checkWin(newBoard, aiPlayer)) {
+		return {score: 10};
+	} else if (availSpots.length === 0) {
+		return {score: 0};
+	}
+
+	var moves = [];
+	for (var i = 0; i < availSpots.length; i++) {
+		var move = {};
+		move.index = newBoard[availSpots[i]];
+		newBoard[availSpots[i]] = player;
+
+		if (player == aiPlayer) {
+			var result = minimax(newBoard, huPlayer);
+			move.score = result.score;
+		} else {
+			var result = minimax(newBoard, aiPlayer);
+			move.score = result.score;
+		}
+
+		newBoard[availSpots[i]] = move.index;
+
+		moves.push(move);
+	}
+
+	var bestMove;
+	if(player === aiPlayer) {
+		var bestScore = -10000;
+		for(var i = 0; i < moves.length; i++) {
+			if (moves[i].score > bestScore) {
+				bestScore = moves[i].score;
+				bestMove = i;
+			}
+		}
+	} else {
+		var bestScore = 10000;
+		for(var i = 0; i < moves.length; i++) {
+			if (moves[i].score < bestScore) {
+				bestScore = moves[i].score;
+				bestMove = i;
+			}
+		}
+	}
+
+	return moves[bestMove];
+}

@@ -109,11 +109,11 @@ You can also [contact](#contact) me.<br>
 # Contact
 I don't like spams
 <p align="left">
-<a href="https://twitter.com/ayushshah__" target="_blank" rel="noopener noreferrer"><img src="https://github.com/AyushShahh/AyushShahh/blob/main/assets/png/twitter.png" height="30"/></a>  
-&nbsp;&nbsp;&nbsp; <a href="https://www.instagram.com/ayushshah__/" target="_blank" rel="noopener noreferrer"><img src="assets/png/instagram.png" height="30"/></a>
-&nbsp;&nbsp;&nbsp; <a href="https://www.quora.com/profile/Ayush-Shah-133/" target="_blank" rel="noopener noreferrer"><img src="assets/png/quora.png" height="30"/></a>
-&nbsp;&nbsp;&nbsp; <a href="https://open.spotify.com/user/mkxf4wwjr521oe9hjrvjbm4f6" target="_blank" rel="noopener noreferrer"><img src="assets/png/spotify.png" height="30"/></a>
-&nbsp;&nbsp;&nbsp; <a href="https://ayush-shah.medium.com" target="_blank" rel="noopener noreferrer"><img src="assets/png/medium.png" height="30"/></a>
-</p><br><br>
+<a href="https://twitter.com/ayushshah__" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/AyushShahh/AyushShahh/main/assets/png/twitter.png" height="40"/></a>  
+&nbsp;&nbsp;&nbsp; <a href="https://www.instagram.com/ayushshah__/" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/AyushShahh/AyushShahh/main/assets/png/instagram.png" height="40"/></a>
+&nbsp;&nbsp;&nbsp; <a href="https://www.quora.com/profile/Ayush-Shah-133/" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/AyushShahh/AyushShahh/main/assets/png/quora.png" height="40"/></a>
+&nbsp;&nbsp;&nbsp; <a href="https://open.spotify.com/user/mkxf4wwjr521oe9hjrvjbm4f6" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/AyushShahh/AyushShahh/main/assets/png/spotify.png" height="40"/></a>
+&nbsp;&nbsp;&nbsp; <a href="https://ayush-shah.medium.com" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/AyushShahh/AyushShahh/main/assets/png/medium.png" height="40"/></a>
+</p><br>
 
 **[Back to top](#tic-tac-toe-)**

@@ -101,27 +101,27 @@ h2 {
   background: #0ff30f;
 }
 
-#block_0,
-#block_1,
-#block_2 {
+#\30,
+#\31,
+#\32 {
   border-top: none;
 }
 
-#block_0,
-#block_3,
-#block_6 {
+#\30,
+#\33,
+#\36 {
   border-left: none;
 }
 
-#block_6,
-#block_7,
-#block_8 {
+#\36,
+#\37,
+#\38 {
   border-bottom: none;
 }
 
-#block_2,
-#block_5,
-#block_8 {
+#\32,
+#\35,
+#\38 {
   border-right: none;
 }
 

@@ -40,10 +40,6 @@ In **this game**, you will be playing as **X** & computer will be playing as **O
 - Click on any grid box to play your move
 - Click reset button after completion to reset the board and play again
 
-**Note:** <br>
- Currently, there is no (real) computer playing against you.<br>
- It is just a JS code that plays randomly, regardless of your move.
-
  ## Web App
  While you can go to the [website](https://tictactoeegame.netlify.app) to play, I would suggest you to use the **web app** so that you don't have to go to the browser and type in the website everytime to want to play. You can directly open the **web application** on your **home screen** or the **desktop shortcut** on your computer to play.<br>
 
@@ -78,7 +74,7 @@ The process might be similar for other browsers too.
  - [x] Showing scores
  - [ ] :x: and :o: animate while making a move
  - [ ] Linethrough on the respective column, row or diagonal when a player wins
- - [ ] Adding AI using JavaScript minimax algorithm
+ - [x] Adding AI using JavaScript minimax algorithm
  - [ ] Adding different levels that user can select to play against computer. e.g. Easy, hard, unbeatable
  - [ ] Adding multiplayer mode
 
@@ -112,11 +108,12 @@ You can also [contact](#contact) me.<br>
 
 # Contact
 I don't like spams
-<p>
-<a href="https://twitter.com/ayushshah__" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/twitter.png" width="50" /></a>  
-&nbsp; <a href="https://www.instagram.com/ayushshah__/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50"/></a>
-&nbsp; <a href="https://www.quora.com/profile/Ayush-Shah-133/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/clouds/50/000000/quora.png"/></a>
-&nbsp; <a href="https://www.clubhouse.com/@ayushshah_" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluent/45/000000/so-so.png"/></a>
-&nbsp; <a href="https://www.discordapp.com/users/810944110046740491" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/doodle/46/000000/discord-new-logo.png"/></a><br><br>
+<p align="left">
+<a href="https://twitter.com/ayushshah__" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/AyushShahh/AyushShahh/main/assets/png/twitter.png" height="40"/></a>  
+&nbsp;&nbsp;&nbsp; <a href="https://www.instagram.com/ayushshah__/" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/AyushShahh/AyushShahh/main/assets/png/instagram.png" height="40"/></a>
+&nbsp;&nbsp;&nbsp; <a href="https://www.quora.com/profile/Ayush-Shah-133/" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/AyushShahh/AyushShahh/main/assets/png/quora.png" height="40"/></a>
+&nbsp;&nbsp;&nbsp; <a href="https://open.spotify.com/user/mkxf4wwjr521oe9hjrvjbm4f6" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/AyushShahh/AyushShahh/main/assets/png/spotify.png" height="40"/></a>
+&nbsp;&nbsp;&nbsp; <a href="https://ayush-shah.medium.com" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/AyushShahh/AyushShahh/main/assets/png/medium.png" height="40"/></a>
+</p><br>
 
 **[Back to top](#tic-tac-toe-)**

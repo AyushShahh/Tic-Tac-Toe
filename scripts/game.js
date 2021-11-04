@@ -28,15 +28,13 @@ const board_container = document.querySelector(".play-area");
 startGame();
 
 function startGame() {
-	winner_statement.classList.remove("playerWin");
-    winner_statement.classList.remove("computerWin");
-    winner_statement.classList.remove("draw");
+	winner_statement.classList.remove("playerWin", "computerWin", "draw");
     winner_statement.innerText = "Good luck ;)";
 
 	origBoard = Array.from(Array(9).keys());
 	for (var i = 0; i < cells.length; i++) {
 		cells[i].innerText = '';
-		cells[i].classList.remove('win');
+		cells[i].classList.remove('win', 'occupied');
 		cells[i].addEventListener('click', turnClick, false);
 	}
 }
@@ -44,15 +42,17 @@ function startGame() {
 function turnClick(square) {
 	if (typeof origBoard[square.target.id] == 'number'){
 		turn(square.target.id, huPlayer);
-
-		if (!checkWin(origBoard, huPlayer) && !checkTie())
-			turn(bestSpot(), aiPlayer);
+		setTimeout(function () {
+			if (!checkWin(origBoard, huPlayer) && !checkTie())
+				turn(bestSpot(), aiPlayer);
+		}, 350);
 	}
 }
 
 function turn(squareId, player) {
 	origBoard[squareId] = player;
 	document.getElementById(squareId).innerText = player;
+	document.getElementById(squareId).classList.add("occupied");
 	let gameWon = checkWin(origBoard, player);
 	if (gameWon)
 		gameOver(gameWon);

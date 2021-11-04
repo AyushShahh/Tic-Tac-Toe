@@ -91,6 +91,7 @@ h2 {
 
 .occupied:hover {
   background: #ff3a3a;
+  cursor: not-allowed;
 }
 
 .win {
@@ -183,5 +184,17 @@ button:focus{
   .scoreboard{
     width:80%;
     font-size: 1.1rem;
+  }
+
+  .occupied:hover {
+    background: none;
+  }
+
+  .occupied:active {
+    background: #ff3a3a;
+  }
+
+  .win:hover {
+    background: #0ff30f;
   }
 }

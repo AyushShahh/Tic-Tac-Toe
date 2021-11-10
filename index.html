@@ -36,13 +36,27 @@
 
     <body>
         <div class="container">
+            <span id="menu" onclick="openNav()"><img class="icon" src="/assets/icons/hamburger_icon.svg"></span>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                
+                <p>Game mode:</p>
+                <div id="gamemode">
+                    <input type="radio" id="ai" name="game_mode" onchange="startGame(); resetScore();" value="ai" checked>
+                    <label for="ai">Play against AI</label><br>
+                    <input type="radio" id="friend" name="game_mode" onchange="startGame(); resetScore();" value="friend">
+                    <label for="friend">Play against a friend</label>
+                </div>
+                <button id="reset" onclick="resetScore()">Reset scores</button>
+            </div>
                 
             <h1>Tic-Tac-Toe</h1>
 
             <div class="scoreboard">
-                <h3><u>You</u><div id="player-score">0</div></h3>
+                <h3><u id="X">You</u><div id="player-score">0</div></h3>
                 <h3><u>Draws</u><div id="game-draws">0</div></h3>
-                <h3><u>Computer</u><div id="computer-score">0</div></h3>
+                <h3><u id="O">Computer</u><div id="computer-score">0</div></h3>
             </div>
 
             <div class="play-area">

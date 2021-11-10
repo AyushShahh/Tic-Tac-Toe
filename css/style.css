@@ -39,6 +39,11 @@
   padding-top: 60px;
 }
 
+.follow {
+  display: flex;
+  margin-top: 20px;
+}
+
 .sidenav a, .sidenav p {
   padding: 8px 8px 8px 10px;
   text-decoration: none;

@@ -31,9 +31,7 @@ Example of the game made:<br>
 
 ## Brief
 Tic-tac-toe is a game for two players, :x: and :o:, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner.
-
-_ _ _
-In **this game**, you will be playing as **X** & computer will be playing as **O**.
+___
 
 ### <b>Playing</b>:
 - **X** plays first
@@ -69,7 +67,7 @@ The process might be similar for other browsers too.
 
  ## To-Do List
  This contains the list of features I'm working on or wish to implement them in future.
- - [ ] Adding two player mode
+ - [x] Adding two player mode
  - [ ] Giving user the option to either play as :x: or :o:
  - [x] Showing scores
  - [ ] :x: and :o: animate while making a move

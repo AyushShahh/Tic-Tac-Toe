@@ -1,6 +1,7 @@
 var origBoard;
 const huPlayer = 'X';
 const aiPlayer = 'O';
+let first_turn = true;
 
 player_score = 0;
 game_draws = 0;
@@ -9,6 +10,9 @@ computer_score = 0;
 html_player_score = document.getElementById("player-score");
 html_game_draws = document.getElementById("game-draws");
 html_computer_score = document.getElementById("computer-score");
+
+player_x = document.getElementById("X");
+player_o = document.getElementById("O");
 
 const winCombos = [
 	[0, 1, 2],
@@ -30,6 +34,16 @@ startGame();
 function startGame() {
 	winner_statement.classList.remove("playerWin", "computerWin", "draw");
     winner_statement.innerText = "Good luck ;)";
+	first = true;
+
+	if(document.getElementById('friend').checked == true){
+		player_x.innerText = "X";
+		player_o.innerText = "O";
+	}
+	else {
+		player_x.innerText = "You";
+		player_o.innerText = "Computer";
+	}
 
 	origBoard = Array.from(Array(9).keys());
 	for (var i = 0; i < cells.length; i++) {
@@ -41,12 +55,25 @@ function startGame() {
 
 function turnClick(square) {
 	if (typeof origBoard[square.target.id] == 'number'){
-		turn(square.target.id, huPlayer);
-		setTimeout(function () {
-			if (!checkWin(origBoard, huPlayer) && !checkTie())
-				turn(bestSpot(), aiPlayer);
-		}, 350);
+		if(document.getElementById('ai').checked == true) {
+			turn(square.target.id, huPlayer);
+			setTimeout(function () {
+				if (!checkWin(origBoard, huPlayer))
+					turn(bestSpot(), aiPlayer);
+			}, 350);
+		}
+		else {
+			if(first){
+				turn(square.target.id, huPlayer);
+				first = false;
+			}
+			else {
+				turn(square.target.id, aiPlayer);
+				first = true;
+			}
+		}
 	}
+	checkTie();
 }
 
 function turn(squareId, player) {
@@ -80,14 +107,24 @@ function gameOver(gameWon) {
 	}
 	if (gameWon.player == huPlayer){
 		player_score += 1;
-    	winner_statement.innerText = "You Won! :)";
+		if (document.getElementById('friend').checked == true)
+			winner_statement.innerText = "X is the winner!";
+		else
+			winner_statement.innerText = "You Won! :)";
+
     	winner_statement.classList.add("playerWin");
 		html_player_score.innerText = player_score;
 	}
 	else {
 		computer_score += 1;
-		winner_statement.innerText = "Computer Won :(";
-		winner_statement.classList.add("computerWin");
+		if (document.getElementById('friend').checked == true){
+			winner_statement.innerText = "O is the winner!";
+			winner_statement.classList.add("playerWin");
+		}
+		else {
+			winner_statement.innerText = "Computer Won :(";
+			winner_statement.classList.add("computerWin");
+		}
 		html_computer_score.innerText = computer_score;
 	}
 }
@@ -164,4 +201,21 @@ function minimax(newBoard, player) {
 	}
 
 	return moves[bestMove];
+}
+
+function openNav() {
+	document.getElementById("mySidenav").style.width = "250px";
+}
+  
+function closeNav() {
+	document.getElementById("mySidenav").style.width = "0";
+}
+
+function resetScore() {
+	player_score = 0;
+	game_draws = 0;
+	computer_score = 0;
+	html_computer_score.innerText = "0";
+	html_game_draws.innerText = "0";
+	html_player_score.innerText = "0";
 }

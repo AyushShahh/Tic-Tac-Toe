@@ -33,16 +33,17 @@ startGame();
 
 function startGame() {
 	winner_statement.classList.remove("playerWin", "computerWin", "draw");
-    winner_statement.innerText = "Good luck ;)";
 	first = true;
 
 	if(document.getElementById('friend').checked == true){
 		player_x.innerText = "X";
 		player_o.innerText = "O";
+		winner_statement.innerText = "X starts the game";
 	}
 	else {
 		player_x.innerText = "You";
 		player_o.innerText = "Computer";
+		winner_statement.innerText = "Good luck ;)";
 	}
 
 	origBoard = Array.from(Array(9).keys());
@@ -65,10 +66,14 @@ function turnClick(square) {
 		else {
 			if(first){
 				turn(square.target.id, huPlayer);
+				if (!checkWin(origBoard, huPlayer))
+					winner_statement.innerText = "O's turn";
 				first = false;
 			}
 			else {
 				turn(square.target.id, aiPlayer);
+				if (!checkWin(origBoard, aiPlayer))
+					winner_statement.innerText = "X's turn";
 				first = true;
 			}
 		}
@@ -138,7 +143,7 @@ function bestSpot() {
 }
 
 function checkTie() {
-	if (emptySquares().length == 0) {
+	if (emptySquares().length == 0 && !checkWin(origBoard, huPlayer)) {
 		for (var i = 0; i < cells.length; i++) {
 			cells[i].removeEventListener('click', turnClick, false);
 		}

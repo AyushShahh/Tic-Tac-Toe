@@ -41,7 +41,17 @@
 
 .follow {
   display: flex;
-  margin-top: 20px;
+  margin-top: 20px; 
+}
+
+.link {
+  filter: invert(17%) sepia(100%) saturate(50%) hue-rotate(20deg) brightness(90%) contrast(50%);
+  -webkit-filter: invert(17%) sepia(100%) saturate(50%) hue-rotate(20deg) brightness(90%) contrast(50%);
+}
+
+.link:hover {
+  filter: none;
+  -webkit-filter: none;
 }
 
 .sidenav a, .sidenav p {

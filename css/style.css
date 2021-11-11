@@ -44,14 +44,6 @@
   margin-top: 20px;
 }
 
-svg{
-  fill: #b4b5b6;
-}
-
-svg:hover{
-  fill: #ffffff;
-}
-
 .sidenav a, .sidenav p {
   padding: 8px 8px 8px 10px;
   text-decoration: none;

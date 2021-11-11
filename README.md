@@ -18,6 +18,7 @@ Check the live site **[here](https://tictactoeegame.netlify.app)**.
 - [Playing](#playing)
 - [Web App](#web-app)
 - [To-Do List](#to-do-list)
+- [APIs used](#apis-used)
 - [External Libraries used](#external-libraries-used)
 - [Have an idea? or questions?](#have-an-idea-or-questions)
 - [Found a bug?](#found-a-bug)
@@ -78,6 +79,9 @@ The process might be similar for other browsers too.
 
 >Know how to implement these features and contribute? Check [Contributions](#contributing) section.<br>
 **Have more ideas?** Check [this](#have-an-idea-or-questions)
+
+## APIs used
+[Web Share API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API) - It provides a way to trigger the native share dialog of a device when sharing content, directly from a website or web application.
 
 ## External Libraries used
 [PWACompat](https://github.com/GoogleChromeLabs/pwacompat) - PWACompat is a library that brings the Web App Manifest to non-compliant browsers for better Progressive Web Apps.<br>

@@ -14,6 +14,8 @@ html_computer_score = document.getElementById("computer-score");
 player_x = document.getElementById("X");
 player_o = document.getElementById("O");
 
+shareButton = document.getElementById("share");
+
 const winCombos = [
 	[0, 1, 2],
 	[3, 4, 5],
@@ -52,6 +54,9 @@ function startGame() {
 		cells[i].classList.remove('win', 'occupied');
 		cells[i].addEventListener('click', turnClick, false);
 	}
+
+	if (!navigator.share)
+		shareButton.style = "display: none";
 }
 
 function turnClick(square) {
@@ -225,3 +230,13 @@ function resetScore() {
 	html_game_draws.innerText = "0";
 	html_player_score.innerText = "0";
 }
+
+shareButton.addEventListener('click', event => {
+	if (navigator.share) {
+		navigator.share({
+		  title: 'Tic-Tac-Toe game',
+		  text: 'Check out this Tic-Tac-Toe game, its cool',
+		  url: 'https://tictactoeegame.netlify.app'
+		})
+	}
+});

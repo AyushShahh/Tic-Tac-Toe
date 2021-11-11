@@ -109,6 +109,7 @@ function gameOver(gameWon) {
 	}
 	for (var i = 0; i < cells.length; i++) {
 		cells[i].removeEventListener('click', turnClick, false);
+		cells[i].classList.add('occupied');
 	}
 	if (gameWon.player == huPlayer){
 		player_score += 1;

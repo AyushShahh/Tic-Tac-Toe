@@ -10,13 +10,13 @@
 <br>
 
 A classic game built using **HTML**, **CSS** & **JavaScript**.<br>
-Check the live site **[here](https://tictactoeegame.netlify.app)**.
+Check the live site **[here](https://tictactoeegame.netlify.app)**.<br>
+If you have accessed this site atleast once using an internet connection, afterwards you can even access the site if you are offline.
 
 ## Table of Contents
 - [Game walkthrough](#game-walkthrough)
 - [Brief](#brief)
 - [Playing](#playing)
-- [Web App](#web-app)
 - [To-Do List](#to-do-list)
 - [APIs used](#apis-used)
 - [External Libraries used](#external-libraries-used)
@@ -39,33 +39,6 @@ ___
 - Click on any grid box to play your move
 - Click reset button after completion to reset the board and play again
 
- ## Web App
- While you can go to the [website](https://tictactoeegame.netlify.app) to play, I would suggest you to use the **web app** so that you don't have to go to the browser and type in the website everytime to want to play. You can directly open the **web application** on your **home screen** or the **desktop shortcut** on your computer to play.<br>
-
- **Follow the steps:**
-1. For desktop users
-- Chrome
-    - Open the [website](https://tictactoeegame.netlify.app)
-    - Tap the **three dots &#8942;** on the top right corner
-    - Click on **More tools**
-    - Click on **Create shortcut**
-    - Check **Open as window** option and click create
-2. For mobile users
-- Chrome
-    - Navigate to the [website](https://tictactoeegame.netlify.app)
-    - Tap the **three dots &#8942;** on the top right corner
-    - Scroll down and click on **Add to home screen**
-    - Click **Add**
-- Safari
-    - Navigate to the [website](https://tictactoeegame.netlify.app)
-    - Click on **Share icon** at bottom<br> 
-    (On the iPad, share icon is located at the **top-right**)
-    - Tap **Add to home screen** from the menu
-    - Type name for shortcut and then tap **Add** button
-
-Now you can use this game as a **Web App**.<br>
-The process might be similar for other browsers too.
-
  ## To-Do List
  This contains the list of features I'm working on or wish to implement them in future.
  - [x] Adding two player mode
@@ -74,7 +47,6 @@ The process might be similar for other browsers too.
  - [ ] :x: and :o: animate while making a move
  - [ ] Linethrough on the respective column, row or diagonal when a player wins
  - [x] Adding AI using JavaScript minimax algorithm
- - [ ] Adding different levels that user can select to play against computer. e.g. Easy, hard, unbeatable
  - [ ] Adding multiplayer mode
 
 >Know how to implement these features and contribute? Check [Contributions](#contributing) section.<br>
@@ -82,6 +54,8 @@ The process might be similar for other browsers too.
 
 ## APIs used
 [Web Share API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API) - It provides a way to trigger the native share dialog of a device when sharing content, directly from a website or web application.
+
+[Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) - Offers offline experience to a user.
 
 ## External Libraries used
 [PWACompat](https://github.com/GoogleChromeLabs/pwacompat) - PWACompat is a library that brings the Web App Manifest to non-compliant browsers for better Progressive Web Apps.<br>

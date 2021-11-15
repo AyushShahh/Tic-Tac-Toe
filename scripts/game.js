@@ -31,6 +31,15 @@ const cells = document.querySelectorAll('.block');
 const winner_statement = document.getElementById("winner");
 const board_container = document.querySelector(".play-area");
 
+if (!navigator.share)
+	shareButton.style = "display: none";
+
+if('serviceWorker' in navigator) {
+	navigator.serviceWorker
+		.register('serviceworker.js')
+		.then(function() { console.log("Service Worker Registered"); });
+}
+
 startGame();
 
 function startGame() {
@@ -54,9 +63,6 @@ function startGame() {
 		cells[i].classList.remove('win', 'occupied');
 		cells[i].addEventListener('click', turnClick, false);
 	}
-
-	if (!navigator.share)
-		shareButton.style = "display: none";
 }
 
 function turnClick(square) {

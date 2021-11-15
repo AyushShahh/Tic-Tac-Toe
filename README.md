@@ -10,8 +10,7 @@
 <br>
 
 A classic game built using **HTML**, **CSS** & **JavaScript**.<br>
-Check the live site **[here](https://tictactoeegame.netlify.app)**.<br>
-If you have accessed this site atleast once using an internet connection, afterwards you can even access the site if you are offline.
+Check the live site **[here](https://tictactoeegame.netlify.app)**.
 
 ## Table of Contents
 - [Game walkthrough](#game-walkthrough)

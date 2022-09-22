@@ -1,6 +1,21 @@
+const deleteCache = async (key) => {
+  await caches.delete(key);
+};
+
+const deleteOldCaches = async () => {
+  const cacheKeepList = ["v1.1"];
+  const keyList = await caches.keys();
+  const cachesToDelete = keyList.filter((key) => !cacheKeepList.includes(key));
+  await Promise.all(cachesToDelete.map(deleteCache));
+};
+
+self.addEventListener("activate", (event) => {
+  event.waitUntil(deleteOldCaches());
+});
+
 self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open('TicTacToe').then(function(cache) {
+    caches.open('v1.1').then(function(cache) {
       return cache.addAll([
         '/',
         '/index.html',

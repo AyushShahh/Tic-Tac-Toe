@@ -75,8 +75,10 @@ function turnClick(square) {
 			setTimeout(function () {
 				if (!checkWin(origBoard, huPlayer))
 					turn(bestSpot(), aiPlayer);
-					for (var i = 0; i < cells.length; i++) {
-						cells[i].addEventListener('click', turnClick, false);
+					if(!checkWin(origBoard, aiPlayer)) {
+						for (var i = 0; i < cells.length; i++) {
+							cells[i].addEventListener('click', turnClick, false);
+						}
 					}
 			}, 350);
 		}

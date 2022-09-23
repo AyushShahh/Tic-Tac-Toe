@@ -1,6 +1,6 @@
 self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open('v1.2').then(function(cache) {
+    caches.open('v1.3').then(function(cache) {
       return cache.addAll([
         '/',
         '/index.html',
@@ -34,7 +34,7 @@ const deleteCache = async (key) => {
 };
 
 const deleteOldCaches = async () => {
-  const cacheKeepList = ["v1.2"];
+  const cacheKeepList = ["v1.3"];
   const keyList = await caches.keys();
   const cachesToDelete = keyList.filter((key) => !cacheKeepList.includes(key));
   await Promise.all(cachesToDelete.map(deleteCache));

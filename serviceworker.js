@@ -1,6 +1,8 @@
 self.addEventListener('install', function(e) {
   e.waitUntil(
+
     caches.open('v1.2').then(function(cache) {
+
       return cache.addAll([
         '/',
         '/index.html',
@@ -42,4 +44,5 @@ const deleteOldCaches = async () => {
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(deleteOldCaches());
+});
 });

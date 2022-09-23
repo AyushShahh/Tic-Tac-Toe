@@ -1,6 +1,6 @@
 self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open('TicTacToe').then(function(cache) {
+    caches.open('v1.2').then(function(cache) {
       return cache.addAll([
         '/',
         '/index.html',
@@ -27,4 +27,19 @@ self.addEventListener('fetch', function(event) {
       return response || fetch(event.request);
     })
   );
+});
+
+const deleteCache = async (key) => {
+  await caches.delete(key);
+};
+
+const deleteOldCaches = async () => {
+  const cacheKeepList = ["v1.2"];
+  const keyList = await caches.keys();
+  const cachesToDelete = keyList.filter((key) => !cacheKeepList.includes(key));
+  await Promise.all(cachesToDelete.map(deleteCache));
+};
+
+self.addEventListener("activate", (event) => {
+  event.waitUntil(deleteOldCaches());
 });

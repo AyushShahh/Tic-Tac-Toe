@@ -69,15 +69,9 @@ function turnClick(square) {
 	if (typeof origBoard[square.target.id] == 'number'){
 		if(document.getElementById('ai').checked == true) {
 			turn(square.target.id, huPlayer);
-			for (var i = 0; i < cells.length; i++) {
-				cells[i].removeEventListener('click', turnClick, false);
-			}
 			setTimeout(function () {
 				if (!checkWin(origBoard, huPlayer))
 					turn(bestSpot(), aiPlayer);
-					for (var i = 0; i < cells.length; i++) {
-						cells[i].addEventListener('click', turnClick, false);
-					}
 			}, 350);
 		}
 		else {
